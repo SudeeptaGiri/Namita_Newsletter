@@ -3,752 +3,336 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Little Stars Classroom | Weekly Newsletter</title>
+    <title>Little Stars Classroom Newsletter</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Animated Background -->
-    <div class="animated-bg">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-        <div class="floating-shapes">
-            <div class="shape shape-1">✨</div>
-            <div class="shape shape-2">🌈</div>
-            <div class="shape shape-3">⭐</div>
-            <div class="shape shape-4">🎈</div>
-            <div class="shape shape-5">🦋</div>
-            <div class="shape shape-6">🌸</div>
-            <div class="shape shape-7">☁️</div>
-            <div class="shape shape-8">🎀</div>
-        </div>
-    </div>
-
     <!-- Navigation -->
-    <nav class="navbar glass-nav">
+    <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">
-                <div class="logo-icon">
-                    <span class="star-burst">★</span>
-                </div>
-                <span class="logo-text">Little Stars</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-item active" data-text="Home">Home</a></li>
-                <li><a href="#highlights" class="nav-item" data-text="Highlights">Highlights</a></li>
-                <li><a href="#curriculum" class="nav-item" data-text="Curriculum">Curriculum</a></li>
-                <li><a href="#events" class="nav-item" data-text="Events">Events</a></li>
-                <li><a href="#reminders" class="nav-item" data-text="Reminders">Reminders</a></li>
-            </ul>
-            <button class="mobile-menu-btn">
-                <span class="hamburger"></span>
+            <a href="#" class="logo">
+                <span class="logo-icon">★</span>
+                <span>Little Stars</span>
+            </a>
+            <button class="menu-btn" aria-label="Menu">
+                <span></span>
             </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#highlights">Highlights</a></li>
+                <li><a href="#curriculum">Curriculum</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#reminders">Reminders</a></li>
+            </ul>
         </div>
     </nav>
 
-    <!-- Hero Section - Immersive 3D -->
+    <!-- Hero -->
     <header id="home" class="hero">
-        <div class="hero-particles" id="particles"></div>
-        <div class="hero-content">
-            <div class="date-badge magnetic-element">
-                <div class="badge-glow"></div>
-                <i class="fas fa-sparkles"></i>
-                <span>February 24–28, 2026</span>
-            </div>
-            
-            <div class="title-container">
-                <h1 class="hero-title">
-                    <span class="title-word" data-text="Weekly">Weekly</span>
-                    <span class="title-word gradient-animate" data-text="Newsletter">Newsletter</span>
-                </h1>
-                <div class="title-underline"></div>
-            </div>
-            
-            <p class="hero-subtitle reveal-text">
-                <span>Little Stars Preschool Classroom</span>
-            </p>
-            
-            <div class="hero-3d-scene">
-                <div class="floating-card card-1">
-                    <span>❄️</span>
-                </div>
-                <div class="floating-card card-2">
-                    <span>📚</span>
-                </div>
-                <div class="floating-card card-3">
-                    <span>🎨</span>
-                </div>
-                <div class="floating-card card-4">
-                    <span>💛</span>
-                </div>
-            </div>
-        </div>
-        
-        <div class="scroll-cta">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <span>Scroll to explore</span>
-        </div>
-        
-        <div class="hero-wave">
-            <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
-                <path fill="currentColor" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-            </svg>
+        <div class="container">
+            <span class="date-badge">February 24–28, 2026</span>
+            <h1>Weekly Newsletter</h1>
+            <p class="subtitle">Little Stars Preschool Classroom</p>
         </div>
     </header>
 
-    <!-- Welcome Message - Glass Card -->
-    <section class="welcome-section">
+    <!-- Welcome -->
+    <section class="welcome">
         <div class="container">
-            <div class="welcome-card glass-card tilt-card">
-                <div class="card-shine"></div>
-                <div class="welcome-avatar">
-                    <div class="avatar-ring"></div>
-                    <div class="avatar-inner">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <div class="avatar-particles"></div>
-                </div>
-                <h2 class="handwriting-text">Dear Families,</h2>
-                <div class="welcome-text">
-                    <p>We cannot believe February is already coming to an end! This week we will be wrapping up our <span class="highlight-word">winter theme</span> and celebrating all the learning that has taken place this month.</p>
-                    <p>Our preschoolers continue to grow <span class="highlight-word">academically</span>, <span class="highlight-word">socially</span>, and <span class="highlight-word">emotionally</span>, and we are so proud of them!</p>
-                    <p>Thank you for your continued support and partnership in your child's early learning journey.</p>
-                </div>
-                <div class="signature-block">
-                    <div class="signature-line"></div>
-                    <div class="signature-content">
-                        <span class="signature-name">Namita Giri</span>
-                        <span class="signature-role">Early Childhood Educator</span>
-                    </div>
-                    <div class="signature-decoration">✨</div>
+            <div class="card welcome-card">
+                <h2>Dear Families,</h2>
+                <p>We cannot believe February is already coming to an end! This week we will be wrapping up our <strong>winter theme</strong> and celebrating all the learning that has taken place this month.</p>
+                <p>Our preschoolers continue to grow <strong>academically</strong>, <strong>socially</strong>, and <strong>emotionally</strong>, and we are so proud of them!</p>
+                <p>Thank you for your continued support and partnership in your child's early learning journey.</p>
+                <div class="signature">
+                    <strong>Namita Giri</strong>
+                    <span>Early Childhood Educator</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Classroom Highlights - Bento Grid -->
-    <section id="highlights" class="highlights-section">
+    <!-- Highlights -->
+    <section id="highlights" class="highlights">
         <div class="container">
-            <div class="section-header">
-                <div class="section-badge">
-                    <span class="badge-icon">🏫</span>
-                    <span class="badge-text">This Week</span>
-                </div>
-                <h2 class="section-title split-text">Classroom Highlights</h2>
-                <p class="section-subtitle">Discover what exciting activities we have planned!</p>
-            </div>
-            
-            <div class="bento-grid">
-                <div class="bento-item bento-large glass-card hover-lift" data-tilt>
-                    <div class="bento-bg" style="--bg-color: #FF6B9D;"></div>
-                    <div class="bento-icon">
-                        <div class="icon-morph">
-                            <span>ABC</span>
-                        </div>
-                    </div>
+            <h2 class="section-title">🏫 Classroom Highlights</h2>
+            <div class="grid">
+                <div class="card highlight-card">
+                    <span class="icon">🔤</span>
                     <h3>Letters & Numbers</h3>
                     <p>Reviewing all letters and numbers learned throughout February with fun games and activities</p>
-                    <div class="bento-decoration">
-                        <span>🔤</span>
-                        <span>🔢</span>
-                    </div>
                 </div>
-                
-                <div class="bento-item glass-card hover-lift" data-tilt>
-                    <div class="bento-bg" style="--bg-color: #6ECFFF;"></div>
-                    <div class="bento-icon">
-                        <i class="fas fa-hand-sparkles"></i>
-                    </div>
+                <div class="card highlight-card">
+                    <span class="icon">✋</span>
                     <h3>Fine Motor Skills</h3>
-                    <p>Tracing and creative art</p>
+                    <p>Tracing and creative art projects</p>
                 </div>
-                
-                <div class="bento-item glass-card hover-lift" data-tilt>
-                    <div class="bento-bg" style="--bg-color: #FFD93D;"></div>
-                    <div class="bento-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
+                <div class="card highlight-card">
+                    <span class="icon">❤️</span>
                     <h3>Kindness & Sharing</h3>
-                    <p>Building friendships</p>
+                    <p>Building friendships and caring for others</p>
                 </div>
-                
-                <div class="bento-item bento-wide glass-card hover-lift" data-tilt>
-                    <div class="bento-bg" style="--bg-color: #7C5CBF;"></div>
-                    <div class="bento-content-row">
-                        <div class="bento-icon">
-                            <i class="fas fa-child-reaching"></i>
-                        </div>
-                        <div class="bento-text">
-                            <h3>Growing Independence</h3>
-                            <p>Encouraging self-reliance and confidence during daily routines and activities</p>
-                        </div>
-                    </div>
-                    <div class="progress-bubbles">
-                        <div class="bubble filled"></div>
-                        <div class="bubble filled"></div>
-                        <div class="bubble filled"></div>
-                        <div class="bubble"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="photo-showcase">
-                <div class="photo-frame-3d">
-                    <div class="frame-border"></div>
-                    <div class="photo-placeholder-inner">
-                        <div class="camera-icon">
-                            <i class="fas fa-camera-retro"></i>
-                        </div>
-                        <span>Classroom Memories</span>
-                        <p>Capturing our wonderful moments together!</p>
-                        <div class="photo-sparkles">
-                            <span>✨</span>
-                            <span>✨</span>
-                            <span>✨</span>
-                        </div>
-                    </div>
+                <div class="card highlight-card">
+                    <span class="icon">🌟</span>
+                    <h3>Growing Independence</h3>
+                    <p>Encouraging self-reliance and confidence during daily routines</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Curriculum Section - Interactive Accordion -->
-    <section id="curriculum" class="curriculum-section">
-        <div class="wavy-top">
-            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-                <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
-            </svg>
-        </div>
-        
+    <!-- Curriculum -->
+    <section id="curriculum" class="curriculum">
         <div class="container">
-            <div class="section-header light">
-                <div class="section-badge light">
-                    <span class="badge-icon">📚</span>
-                    <span class="badge-text">Learning</span>
-                </div>
-                <h2 class="section-title">Curriculum Wrap-Up</h2>
-                <div class="theme-pill">
-                    <span class="pill-icon">❄️</span>
-                    <span>Winter & Friendship</span>
-                    <span class="pill-icon">❤️</span>
-                </div>
-            </div>
-
-            <div class="curriculum-accordion">
-                <div class="accordion-item active" data-color="#FF6B9D">
-                    <div class="accordion-header">
-                        <div class="accordion-icon">
-                            <span>🌨️</span>
-                        </div>
-                        <h3>What We Explored</h3>
-                        <div class="accordion-toggle">
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
+            <h2 class="section-title">📚 Curriculum Wrap-Up</h2>
+            <p class="theme-badge">❄️ Winter & Friendship ❤️</p>
+            
+            <div class="accordion">
+                <div class="accordion-item active">
+                    <button class="accordion-header">
+                        <span>🌨️ What We Explored</span>
+                        <span class="toggle">+</span>
+                    </button>
                     <div class="accordion-content">
-                        <div class="content-grid">
-                            <div class="content-item pop-in">
-                                <div class="item-icon">🧥</div>
-                                <span>Winter weather and clothing</span>
-                            </div>
-                            <div class="content-item pop-in">
-                                <div class="item-icon">🐻</div>
-                                <span>How animals stay warm</span>
-                            </div>
-                            <div class="content-item pop-in">
-                                <div class="item-icon">🤝</div>
-                                <span>Friendship and acts of kindness</span>
-                            </div>
-                            <div class="content-item pop-in">
-                                <div class="item-icon">😊</div>
-                                <span>Identifying and expressing emotions</span>
-                            </div>
-                        </div>
+                        <ul>
+                            <li>🧥 Winter weather and clothing</li>
+                            <li>🐻 How animals stay warm</li>
+                            <li>🤝 Friendship and acts of kindness</li>
+                            <li>😊 Identifying and expressing emotions</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="accordion-item" data-color="#6ECFFF">
-                    <div class="accordion-header">
-                        <div class="accordion-icon">
-                            <span>📖</span>
-                        </div>
-                        <h3>Literacy Development</h3>
-                        <div class="accordion-toggle">
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>📖 Literacy Development</span>
+                        <span class="toggle">+</span>
+                    </button>
                     <div class="accordion-content">
-                        <div class="content-grid">
-                            <div class="content-item">
-                                <div class="item-icon">🔤</div>
-                                <span>Letter recognition review</span>
-                            </div>
-                            <div class="content-item">
-                                <div class="item-icon">✏️</div>
-                                <span>Name tracing practice</span>
-                            </div>
-                            <div class="content-item">
-                                <div class="item-icon">🎵</div>
-                                <span>Rhyming activities</span>
-                            </div>
-                            <div class="content-item">
-                                <div class="item-icon">💭</div>
-                                <span>Story discussions during circle time</span>
-                            </div>
-                        </div>
+                        <ul>
+                            <li>🔤 Letter recognition review</li>
+                            <li>✏️ Name tracing practice</li>
+                            <li>🎵 Rhyming activities</li>
+                            <li>💭 Story discussions during circle time</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="accordion-item" data-color="#6BCB77">
-                    <div class="accordion-header">
-                        <div class="accordion-icon">
-                            <span>🔢</span>
-                        </div>
-                        <h3>Math Skills</h3>
-                        <div class="accordion-toggle">
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>🔢 Math Skills</span>
+                        <span class="toggle">+</span>
+                    </button>
                     <div class="accordion-content">
-                        <div class="content-grid">
-                            <div class="content-item">
-                                <div class="item-icon">1️⃣</div>
-                                <span>Counting 1–20</span>
-                            </div>
-                            <div class="content-item">
-                                <div class="item-icon">🔷</div>
-                                <span>Sorting by size, shape, and color</span>
-                            </div>
-                            <div class="content-item">
-                                <div class="item-icon">🔁</div>
-                                <span>Pattern building</span>
-                            </div>
-                            <div class="content-item">
-                                <div class="item-icon">⚖️</div>
-                                <span>Comparing quantities (more/less)</span>
-                            </div>
-                        </div>
+                        <ul>
+                            <li>1️⃣ Counting 1–20</li>
+                            <li>🔷 Sorting by size, shape, and color</li>
+                            <li>🔁 Pattern building</li>
+                            <li>⚖️ Comparing quantities (more/less)</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="accordion-item" data-color="#FFD93D">
-                    <div class="accordion-header">
-                        <div class="accordion-icon">
-                            <span>💛</span>
-                        </div>
-                        <h3>Social-Emotional Learning</h3>
-                        <div class="accordion-toggle">
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>💛 Social-Emotional Learning</span>
+                        <span class="toggle">+</span>
+                    </button>
                     <div class="accordion-content">
-                        <div class="content-grid">
-                            <div class="content-item">
-                                <div class="item-icon">🔄</div>
-                                <span>Taking turns</span>
-                            </div>
-                            <div class="content-item">
-                                <div class="item-icon">❤️</div>
-                                <span>Expressing feelings appropriately</span>
-                            </div>
-                            <div class="content-item">
-                                <div class="item-icon">🧩</div>
-                                <span>Cooperative play</span>
-                            </div>
-                            <div class="content-item">
-                                <div class="item-icon">💡</div>
-                                <span>Problem-solving strategies</span>
-                            </div>
-                        </div>
+                        <ul>
+                            <li>🔄 Taking turns</li>
+                            <li>❤️ Expressing feelings appropriately</li>
+                            <li>🧩 Cooperative play</li>
+                            <li>💡 Problem-solving strategies</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div class="wavy-bottom">
-            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-                <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
-            </svg>
-        </div>
     </section>
 
-    <!-- Special Activities - Carousel -->
-    <section class="activities-section">
+    <!-- Activities -->
+    <section class="activities">
         <div class="container">
-            <div class="section-header">
-                <div class="section-badge rainbow">
-                    <span class="badge-icon">🎨</span>
-                    <span class="badge-text">Fun Time</span>
+            <h2 class="section-title">🎨 Special Activities</h2>
+            <div class="activity-grid">
+                <div class="activity-card">
+                    <span class="emoji">❄️</span>
+                    <h3>Winter Art Collage</h3>
+                    <p>Creating beautiful winter scenes with mixed media</p>
                 </div>
-                <h2 class="section-title">Special Activities</h2>
-            </div>
-
-            <div class="activities-slider">
-                <div class="slider-track">
-                    <div class="activity-card-3d">
-                        <div class="card-face card-front">
-                            <div class="activity-emoji">❄️</div>
-                            <h3>Winter Art Collage</h3>
-                        </div>
-                        <div class="card-face card-back">
-                            <p>Creating beautiful winter scenes with mixed media and creative materials</p>
-                        </div>
-                    </div>
-                    
-                    <div class="activity-card-3d">
-                        <div class="card-face card-front">
-                            <div class="activity-emoji">💎</div>
-                            <h3>Friendship Bracelet</h3>
-                        </div>
-                        <div class="card-face card-back">
-                            <p>Crafting special bracelets to share with our classroom friends</p>
-                        </div>
-                    </div>
-                    
-                    <div class="activity-card-3d">
-                        <div class="card-face card-front">
-                            <div class="activity-emoji">🎵</div>
-                            <h3>Music & Movement</h3>
-                        </div>
-                        <div class="card-face card-back">
-                            <p>Dancing, singing, and expressing ourselves through music</p>
-                        </div>
-                    </div>
-                    
-                    <div class="activity-card-3d">
-                        <div class="card-face card-front">
-                            <div class="activity-emoji">🤗</div>
-                            <h3>Kindness Circle</h3>
-                        </div>
-                        <div class="card-face card-back">
-                            <p>Group discussion about being kind and caring for others</p>
-                        </div>
-                    </div>
-                    
-                    <div class="activity-card-3d">
-                        <div class="card-face card-front">
-                            <div class="activity-emoji">🏃</div>
-                            <h3>Indoor Gross Motor</h3>
-                        </div>
-                        <div class="card-face card-back">
-                            <p>Active play and physical development activities indoors</p>
-                        </div>
-                    </div>
+                <div class="activity-card">
+                    <span class="emoji">💎</span>
+                    <h3>Friendship Bracelet</h3>
+                    <p>Crafting special bracelets to share with friends</p>
+                </div>
+                <div class="activity-card">
+                    <span class="emoji">🎵</span>
+                    <h3>Music & Movement</h3>
+                    <p>Dancing and expressing through music</p>
+                </div>
+                <div class="activity-card">
+                    <span class="emoji">🤗</span>
+                    <h3>Kindness Circle</h3>
+                    <p>Discussing how to care for others</p>
+                </div>
+                <div class="activity-card">
+                    <span class="emoji">🏃</span>
+                    <h3>Indoor Gross Motor</h3>
+                    <p>Active play and physical development</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Upcoming Events - Timeline -->
-    <section id="events" class="events-section">
+    <!-- Events -->
+    <section id="events" class="events">
         <div class="container">
-            <div class="section-header">
-                <div class="section-badge">
-                    <span class="badge-icon">📅</span>
-                    <span class="badge-text">Mark Your Calendar</span>
-                </div>
-                <h2 class="section-title">Upcoming Events</h2>
-            </div>
-
-            <div class="timeline-container">
-                <div class="timeline-line"></div>
-                
-                <div class="timeline-item featured" data-side="left">
-                    <div class="timeline-dot pulse"></div>
-                    <div class="timeline-card glass-card">
-                        <div class="event-ribbon">This Week!</div>
-                        <div class="event-date-block">
-                            <span class="event-day">27</span>
-                            <span class="event-month">FEB</span>
-                        </div>
-                        <div class="event-details">
-                            <h3>Parents Night Out</h3>
-                            <p class="event-time"><i class="fas fa-clock"></i> 7:00 PM – 11:00 PM</p>
-                            <p>An evening for parents to relax while children enjoy supervised activities!</p>
-                        </div>
-                        <div class="event-decoration">🌙</div>
+            <h2 class="section-title">📅 Upcoming Events</h2>
+            <div class="events-list">
+                <div class="event-card featured">
+                    <div class="event-date">
+                        <span class="day">27</span>
+                        <span class="month">FEB</span>
+                    </div>
+                    <div class="event-info">
+                        <span class="badge">This Week!</span>
+                        <h3>Parents Night Out</h3>
+                        <p>7:00 PM – 11:00 PM</p>
+                        <p>An evening for parents to relax while children enjoy supervised activities!</p>
                     </div>
                 </div>
 
-                <div class="timeline-item" data-side="right">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card glass-card">
-                        <div class="event-date-block green">
-                            <span class="event-day">1-31</span>
-                            <span class="event-month">MAR</span>
-                        </div>
-                        <div class="event-details">
-                            <h3>Pajama Project</h3>
-                            <p>A month-long celebration of cozy reading and bedtime stories!</p>
-                        </div>
-                        <div class="event-decoration">🛏️</div>
+                <div class="event-card">
+                    <div class="event-date green">
+                        <span class="day">1-31</span>
+                        <span class="month">MAR</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Pajama Project</h3>
+                        <p>A month-long celebration of cozy reading and bedtime stories!</p>
                     </div>
                 </div>
 
-                <div class="timeline-item special" data-side="left">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card glass-card seuss-theme">
-                        <div class="seuss-hat">🎩</div>
-                        <div class="event-date-block rainbow">
-                            <span class="event-day">2-6</span>
-                            <span class="event-month">MAR</span>
-                        </div>
-                        <div class="event-details">
-                            <h3>Dr. Seuss Birthday Celebration</h3>
-                            <p class="special-badge">Read Across America Week</p>
-                            <p>Spirit Week with fun activities!</p>
-                            <p class="email-note"><i class="fas fa-envelope"></i> Details coming soon!</p>
-                        </div>
+                <div class="event-card special">
+                    <div class="event-date rainbow">
+                        <span class="day">2-6</span>
+                        <span class="month">MAR</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>🎩 Dr. Seuss Birthday Celebration</h3>
+                        <p class="highlight">Read Across America Week</p>
+                        <p>Spirit Week with fun activities! Details coming soon via email.</p>
                     </div>
                 </div>
 
-                <div class="timeline-item" data-side="right">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card glass-card">
-                        <div class="event-date-block blue">
-                            <span class="event-day">16-20</span>
-                            <span class="event-month">MAR</span>
-                        </div>
-                        <div class="event-details">
-                            <h3>PISD Spring Break Week</h3>
-                            <p>Time for family adventures and relaxation!</p>
-                        </div>
-                        <div class="event-decoration">🌴</div>
+                <div class="event-card">
+                    <div class="event-date blue">
+                        <span class="day">16-20</span>
+                        <span class="month">MAR</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>🌴 PISD Spring Break Week</h3>
+                        <p>Time for family adventures and relaxation!</p>
                     </div>
                 </div>
 
-                <div class="timeline-item" data-side="left">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card glass-card">
-                        <div class="event-date-block purple">
-                            <span class="event-day">23</span>
-                            <span class="event-month">MAR</span>
-                        </div>
-                        <div class="event-details">
-                            <h3>School Age Camp Day</h3>
-                            <p>PISD School Holiday</p>
-                        </div>
-                        <div class="event-decoration">⛺</div>
+                <div class="event-card">
+                    <div class="event-date purple">
+                        <span class="day">23</span>
+                        <span class="month">MAR</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>⛺ School Age Camp Day</h3>
+                        <p>PISD School Holiday</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Reminders Section - Flip Cards -->
-    <section id="reminders" class="reminders-section">
+    <!-- Reminders -->
+    <section id="reminders" class="reminders">
         <div class="container">
-            <div class="section-header">
-                <div class="section-badge bell-animate">
-                    <span class="badge-icon">🔔</span>
-                    <span class="badge-text">Don't Forget</span>
+            <h2 class="section-title">🔔 Important Reminders</h2>
+            <div class="reminder-grid">
+                <div class="reminder-card">
+                    <span class="icon">🏷️</span>
+                    <p>Label all <strong>jackets</strong> and <strong>water bottles</strong></p>
                 </div>
-                <h2 class="section-title">Important Reminders</h2>
-            </div>
-
-            <div class="reminders-orbit">
-                <div class="orbit-center">
-                    <div class="center-icon">📝</div>
+                <div class="reminder-card">
+                    <span class="icon">🧥</span>
+                    <p>Dress <strong>appropriately</strong> for outdoor play</p>
                 </div>
-                
-                <div class="reminder-orb orb-1">
-                    <div class="orb-content">
-                        <div class="orb-icon">🏷️</div>
-                        <p>Label all <strong>jackets</strong> and <strong>water bottles</strong></p>
-                    </div>
+                <div class="reminder-card">
+                    <span class="icon">🎒</span>
+                    <p>Check <strong>backpacks</strong> daily for artwork</p>
                 </div>
-                
-                <div class="reminder-orb orb-2">
-                    <div class="orb-content">
-                        <div class="orb-icon">🧥</div>
-                        <p>Dress <strong>appropriately</strong> for outdoor play</p>
-                    </div>
-                </div>
-                
-                <div class="reminder-orb orb-3">
-                    <div class="orb-content">
-                        <div class="orb-icon">🎒</div>
-                        <p>Check <strong>backpacks</strong> daily for artwork</p>
-                    </div>
-                </div>
-                
-                <div class="reminder-orb orb-4">
-                    <div class="orb-content">
-                        <div class="orb-icon">📞</div>
-                        <p><strong>Notify</strong> us if your child will be absent</p>
-                    </div>
+                <div class="reminder-card">
+                    <span class="icon">📞</span>
+                    <p><strong>Notify</strong> us if your child will be absent</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- At-Home Connection - Interactive Cards -->
-    <section class="home-connection-section">
+    <!-- Home Connection -->
+    <section class="home-connection">
         <div class="container">
-            <div class="connection-wrapper">
-                <div class="connection-visual">
-                    <div class="house-3d">
-                        <div class="house-body">
-                            <div class="house-roof"></div>
-                            <div class="house-front">
-                                <div class="house-door"></div>
-                                <div class="house-window"></div>
-                            </div>
-                        </div>
-                        <div class="house-hearts">
-                            <span>❤️</span>
-                            <span>💛</span>
-                            <span>💙</span>
-                        </div>
-                    </div>
+            <h2 class="section-title">🏠 At-Home Connection</h2>
+            <p class="intro">Support learning at home with these simple activities!</p>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <span class="number">1</span>
+                    <h4>📚 Read Together</h4>
+                    <p>Spend time reading together each evening</p>
                 </div>
-                
-                <div class="connection-content">
-                    <div class="section-badge home">
-                        <span class="badge-icon">🏠</span>
-                        <span class="badge-text">Family Time</span>
-                    </div>
-                    <h2>At-Home Connection</h2>
-                    <p class="connection-intro">Support learning at home with these simple activities!</p>
-                    
-                    <div class="tips-stack">
-                        <div class="tip-item" data-number="1">
-                            <div class="tip-icon">📚</div>
-                            <div class="tip-text">
-                                <h4>Read Together</h4>
-                                <p>Spend time reading together each evening</p>
-                            </div>
-                        </div>
-                        
-                        <div class="tip-item" data-number="2">
-                            <div class="tip-icon">🔢</div>
-                            <div class="tip-text">
-                                <h4>Practice Counting</h4>
-                                <p>Count household items during daily routines</p>
-                            </div>
-                        </div>
-                        
-                        <div class="tip-item" data-number="3">
-                            <div class="tip-icon">💬</div>
-                            <div class="tip-text">
-                                <h4>Talk About Feelings</h4>
-                                <p>Discuss emotions and how to express them</p>
-                            </div>
-                        </div>
-                        
-                        <div class="tip-item" data-number="4">
-                            <div class="tip-icon">🌟</div>
-                            <div class="tip-text">
-                                <h4>Encourage Independence</h4>
-                                <p>Support dressing and clean-up routines</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="connection-quote">
-                        <span class="quote-mark">"</span>
-                        <p>These small steps help build <em>confidence</em> and <em>school readiness</em>!</p>
-                    </div>
+                <div class="tip-card">
+                    <span class="number">2</span>
+                    <h4>🔢 Practice Counting</h4>
+                    <p>Count household items during daily routines</p>
+                </div>
+                <div class="tip-card">
+                    <span class="number">3</span>
+                    <h4>💬 Talk About Feelings</h4>
+                    <p>Discuss emotions and how to express them</p>
+                </div>
+                <div class="tip-card">
+                    <span class="number">4</span>
+                    <h4>🌟 Encourage Independence</h4>
+                    <p>Support dressing and clean-up routines</p>
                 </div>
             </div>
+            <p class="quote">"These small steps help build <em>confidence</em> and <em>school readiness</em>!"</p>
         </div>
     </section>
 
-    <!-- Thank You Section - Celebration -->
-    <section class="thankyou-section">
-        <div class="celebration-bg">
-            <div class="confetti-piece"></div>
-            <div class="confetti-piece"></div>
-            <div class="confetti-piece"></div>
-            <div class="confetti-piece"></div>
-            <div class="confetti-piece"></div>
-        </div>
-        
+    <!-- Thank You -->
+    <section class="thankyou">
         <div class="container">
-            <div class="thankyou-wrapper">
-                <div class="thankyou-card premium-card">
-                    <div class="card-glow"></div>
-                    <div class="hearts-float">
-                        <span class="float-heart">💛</span>
-                        <span class="float-heart">💛</span>
-                        <span class="float-heart">💛</span>
-                    </div>
-                    
-                    <h2 class="thankyou-title">
-                        <span class="letter">T</span>
-                        <span class="letter">h</span>
-                        <span class="letter">a</span>
-                        <span class="letter">n</span>
-                        <span class="letter">k</span>
-                        <span class="letter">&nbsp;</span>
-                        <span class="letter">Y</span>
-                        <span class="letter">o</span>
-                        <span class="letter">u</span>
-                        <span class="letter">!</span>
-                    </h2>
-                    
-                    <div class="thankyou-message">
-                        <p>As we close out February, we celebrate the <span class="highlight">friendships</span>, <span class="highlight">growth</span>, and <span class="highlight">joyful learning</span> in our classroom.</p>
-                        <p>We look forward to welcoming March with new themes and exciting activities!</p>
-                    </div>
-                    
-                    <div class="partner-badge">
-                        <div class="badge-stars">⭐ ⭐ ⭐</div>
-                        <p>Thank you for being <span class="valued">valued partners</span> in your child's education</p>
-                    </div>
-                    
-                    <div class="signature-final">
-                        <div class="signature-heart">❤️</div>
-                        <span>With love from Little Stars Classroom</span>
-                    </div>
-                </div>
+            <div class="thankyou-card">
+                <h2>Thank You! 💛</h2>
+                <p>As we close out February, we celebrate the <strong>friendships</strong>, <strong>growth</strong>, and <strong>joyful learning</strong> in our classroom.</p>
+                <p>We look forward to welcoming March with new themes and exciting activities!</p>
+                <div class="stars">⭐ ⭐ ⭐</div>
+                <p class="partner">Thank you for being <strong>valued partners</strong> in your child's education</p>
+                <p class="signature-final">With love from Little Stars Classroom ❤️</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer - Modern -->
+    <!-- Footer -->
     <footer class="footer">
-        <div class="footer-wave">
-            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-                <path d="M0,40L60,45C120,50,240,60,360,65C480,70,600,70,720,60C840,50,960,30,1080,25C1200,20,1320,30,1380,35L1440,40L1440,120L1380,120C1320,120,1200,120,1080,120C960,120,840,120,720,120C600,120,480,120,360,120C240,120,120,120,60,120L0,120Z"></path>
-            </svg>
-        </div>
-        
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <div class="logo-star">★</div>
-                        <span>Little Stars</span>
-                    </div>
-                    <p class="footer-tagline">Nurturing young minds, one day at a time</p>
-                </div>
-                
-                <div class="footer-divider">
-                    <span>🌟</span>
-                    <span>📚</span>
-                    <span>🎨</span>
-                    <span>❄️</span>
-                    <span>💛</span>
-                </div>
-                
-                <div class="footer-credit">
-                    <p>Early Childhood Education Newsletter</p>
-                    <p class="created-by">Created with <span class="heart-beat">❤️</span> by <strong>Namita Giri</strong></p>
-                </div>
-                
-                <div class="footer-year">
-                    <span>© 2026</span>
-                </div>
+            <div class="footer-logo">
+                <span class="star">★</span>
+                <span>Little Stars</span>
             </div>
+            <p>Nurturing young minds, one day at a time</p>
+            <div class="footer-icons">🌟 📚 🎨 ❄️ 💛</div>
+            <p class="credit">Created with ❤️ by <strong>Namita Giri</strong></p>
+            <p class="year">© 2026</p>
         </div>
     </footer>
 
